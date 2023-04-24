@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="atividade10.js"></script>
+    <title>Atividade 10</title>
+</head>
+
+<body>
+    <!--Criar o Objeto: Aluno1(propriedades: RA, Nome).
+    Atribua valores para as propriedades.
+    ** Utilizar 3 formas diferentes-->
+
+    <h2 id="aluno1"></h2>
+    <h2 id="aluno2"></h2>
+    <h2 id="aluno3"></h2>
+    <script>
+
+        //Forma Literal
+        var aluno1 = {
+            nome: "João",
+            RA: "123",
+            turma: "A"
+        };
+        document.getElementById("aluno1").innerHTML = "Aluno: " + aluno1.nome + " RA: " + aluno1.RA + " Turma: " + aluno1.turma;
+
+
+
+        //2ª Forma
+        var aluno2 = {};
+        var nome_propriedade = 'nome';
+        var RA_propriedade = 'RA';
+        var turma_propriedade = 'turma';
+
+        aluno2[nome_propriedade] = "Maria";
+        aluno2[RA_propriedade] = "321";
+        aluno2[turma_propriedade] = "B";
+        document.getElementById("aluno2").innerHTML = "Aluno: " + aluno2.nome + " RA: " + aluno2.RA + " Turma: " + aluno2.turma;
+
+        //3ªForma
+        var aluno3 = {};
+        aluno3["nome"] = "Pedro";
+        aluno3["RA"] = "231";
+        aluno3["turma"] = "C";
+        document.getElementById("aluno3").innerHTML = "Aluno: " + aluno3.nome + " RA: " + aluno3.RA + " Turma: " + aluno3.turma;
+
+    </script>
+
+
+</body>
+
+</html>
