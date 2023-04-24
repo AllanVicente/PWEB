@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="atividade8.js"></script>
+    <title>Atividade 8</title>
+</head>
+
+<body>
+    <h1>Pesquisa de Opinião</h1>
+    <br><br>
+    <h2>Informe os seus dados:</h2>
+    <!--Durante o lançamento de um filme, 45 pessoas assistiram. Na saída
+    foi realizada uma pesquisa informando a idade, sexo e a opinião,
+    onde: ótimo=4, bom=3, regular=2, péssimo=1.
+    Fazer uma aplicação utilizando JavaScript que receba os dados
+    (idade, sexo e opinião) e retornar:
+        a média da idade das pessoas que responderam ao questionário;
+        a idade da pessoa mais velha;
+        a idade da pessoa mais nova;
+        a quantidade de pessoas que responderam péssimo;
+        a porcentagem de pessoas que responderam ótimo e bom;
+        o número de mulheres e homens que responderam ao questionário.-->
+    <label>Idade:
+        <input type="number" id="idade" style="width: 5ch;" required>
+    </label>
+    <br><br>
+    <label> Sexo
+        <select id="sexo" name="sexo">
+            <option value="M">M</option>
+            <option value="F">F</option>
+        </select>
+    </label>
+    <br><br>
+    <h2>Como você avalia o filme:</h2>
+    <br>
+    <input type="radio" id="pessimo" name="opiniao" value="1" />
+    <label for="pessimo">Péssimo</label>
+
+    <input type="radio" id="regular" name="opiniao" value="2" />
+    <label for="regular">Regular</label>
+
+    <input type="radio" id="bom" name="opiniao" value="3" />
+    <label for="bom">Bom</label>
+
+    <input type="radio" id="otimo" name="opiniao" value="4" checked />
+    <label for="otimo">Ótimo</label>
+
+
+
+    <br><br>
+    <button type="button" onclick="addPessoa()">Adicionar</button>
+
+    <br><br>
+    <h2>Dados levantados:</h2>
+
+
+    <p id="dadosLevantados"></p>
+    </label>
+    <button type="button" onclick="dadosLevantados()">Dados levantados</button>
+
+
+</body>
+
+</html>
