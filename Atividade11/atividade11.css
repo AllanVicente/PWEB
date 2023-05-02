@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100vh;
+    
+  }
+  
+  
+  .ladoA {
+    width: 50%;
+    background-color: #86aff7;
+    padding: 10px;
+
+
+  }
+  
+  .ladoB {
+    width: 50%;
+    background-color: #eee;
+    padding: 10px;
+
+  }
