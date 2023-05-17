@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="atividade14.js"></script>
+    <title>Atividade 14</title>
+</head>
+
+<body style="display: flex; background-color:rgb(0,205,255);  align-items: center; flex-direction: column;">
+    <form method="POST" name="formulario1" id="formulario1" onsubmit="return Validar()"><h1 style="text-align: center ;color: white; ">Formulário Principal</h1>
+        <fieldset>
+            
+            <label><em>Nome</em></label>
+            <br>
+            <input type="text" name="nome" id="nome" size="52" maxlength="150">
+            <br><br>
+            <label><em>E-mail</em></label>
+            <br>
+            <input type="email" name="email" id="email" size="52" maxlength="150">
+            <br><br>
+            <label><em>Comentário</em></label>
+            <br>
+            <textarea cols="30" rows="8" id="comentario"></textarea>
+            <br><br>
+        
+       
+
+
+
+        <div style="display: flex; align-items: center; flex-direction: column;">
+                <h2>Pesquisa</h2>
+                <br>
+                <p>Primeira vez nesta página??</p>
+                <br>
+                <div>
+                    <input type="radio" name="pesquisa" id="sim">Sim
+                    <input type="radio" name="pesquisa" id="nao">Não
+                </div>
+                <br><br>
+                <div>
+                    <button>Enviar</button>
+                    <button onclick="Limpar()">Limpar</button>
+                </div>
+                <br>
+        </div>
+        </fieldset>
+    </form>
+
+
+    
+</body>
+</html>
