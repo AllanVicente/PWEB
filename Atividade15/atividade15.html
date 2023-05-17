@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletor de Cursos</title>
+</head>
+<body>
+    <h1>Seletor de Cursos</h1>
+
+    <label for="curso">Escolha um curso:</label>
+    <select id="curso">
+        <option value="">Selecione</option>
+        <option value="1">Análise e Desenvolvimento de Sistemas</option>
+        <option value="2">Automação Industrial</option>
+        <option value="3">Gestão da Tecnologia da Informação</option>
+        <option value="4">Logística</option>
+        <option value="5">Manutenção Industrial</option>
+        <option value="6">Produção Industrial</option>
+        <option value="7">Processos Metalúrgicos</option>
+        <option value="8">Sistemas Biomédicos</option>
+    </select>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var selectCurso = document.getElementById("curso");
+
+            selectCurso.addEventListener("change", function() {
+                var selectedValue = this.value;
+                if (selectedValue !== "") {
+                    var confirmMessage = "Deseja abrir a página do curso escolhido?";
+                    if (confirm(confirmMessage)) {
+                        abrirPaginaCurso(selectedValue);
+                    }
+                }
+            });
+        });
+
+        function abrirPaginaCurso(cursoId) {
+            var url;
+            switch (cursoId) {
+                case "1":
+                    url = "curso_analise_desenvolvimento_sistemas.html";
+                    break;
+                case "2":
+                    url = "curso_automacao_industrial.html";
+                    break;
+                case "3":
+                    url = "curso_gestao_tecnologia_informacao.html";
+                    break;
+                case "4":
+                    url = "curso_logistica.html";
+                    break;
+                case "5":
+                    url = "curso_manutencao_industrial.html";
+                    break;
+                case "6":
+                    url = "curso_producao_industrial.html";
+                    break;
+                case "7":
+                    url = "curso_processos_metalurgicos.html";
+                    break;
+                case "8":
+                    url = "curso_sistemas_biomedicos.html";
+                    break;
+                default:
+                    return;
+            }
+
+            var windowFeatures = "width=600,height=300";
+            window.open(url, "_blank", windowFeatures);
+        }
+    </script>
+</body>
+</html>
